@@ -37,6 +37,6 @@ function vimeoQuery(params) {
 
     var length = results.length;
     if (length > 0) results[length - 1].default = true;
-
+ 
     return {results: results};
 }
