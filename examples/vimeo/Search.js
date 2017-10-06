@@ -1,4 +1,4 @@
-function vimeoSearch(params) {
+function execute(params) {
     var keywords = (params.keywords || "").replace(/\s/g, "+");
     var skip = params.skip || 0;
     var requestCount = params.count || 90;
