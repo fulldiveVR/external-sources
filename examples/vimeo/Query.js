@@ -1,4 +1,4 @@
-function vimeoQuery(params) {
+function execute(params) {
     var content = Global.execute({
         name: "download",
         url: "https://player.vimeo.com/video/" + params.videoId,
