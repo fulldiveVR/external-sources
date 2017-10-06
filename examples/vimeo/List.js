@@ -1,4 +1,4 @@
-function vimeoList(params) {
+function execute(params) {
     var skip = params.skip || 0;
     var requestCount = params.count || 90;
     var count = requestCount + skip;
