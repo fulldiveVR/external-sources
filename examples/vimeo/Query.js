@@ -1,7 +1,7 @@
 function execute(params) {
     var content = Global.execute({
         name: "download",
-        url: "https://player.vimeo.com/video/" + params.videoId,
+        url: "https://player.vimeo.com/video/" + params.id,
         verb: "GET",
         headers: [
             {name: "User-Agent", value: "Mozilla/5.0 (Linux; <Android Version>; <Build Tag etc.>) AppleWebKit/<WebKit Rev>(KHTML, like Gecko) Chrome/<Chrome Rev> Safari/<WebKit Rev>"}
