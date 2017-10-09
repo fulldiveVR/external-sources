@@ -15,10 +15,12 @@ function execute(params) {
         var arr = contentArray[1].match(/{.*?}/g)
         arr.forEach(function (item, i) {
             var jsonItem = JSON.parse(item);
+            var q = parseInt(jsonItem.quality);
+            if (isNaN(q)) q = 0;
             results.push({
                 videoStreamUrl: jsonItem.url,
                 audioStreamUrl: null,
-                quality: jsonItem.quality,
+                quality: q,
                 "default": false
             })
         })
