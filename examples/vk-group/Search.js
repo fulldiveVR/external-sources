@@ -33,7 +33,7 @@ function execute(params){
             totalTime = totalTime +  (times[i] * multiplicator);
         };
 
-        if(x[3].toUpperCase().includes(q.toUpperCase())) {
+        if(x[3].toUpperCase().indexOf(q.toUpperCase()) > -1) {
             var res = {
                 id: x[0] + "|" + x[1],
                 title: x[3],
