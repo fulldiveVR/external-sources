@@ -1,7 +1,7 @@
 function execute(params){
     var pager = {
         skip: params.skip || 0,
-        count: params.skip || 1000
+        count: params.count || 1000
     };
     var q = params.query;
     var content = Global.execute({
