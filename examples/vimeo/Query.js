@@ -12,7 +12,7 @@ function execute(params) {
     var results = [];
 
     if (contentArray !== null) {
-        var arr = contentArray[1].match(/{.*?}/g)
+        var arr = contentArray[1].match(/{.*?}/g);
         arr.forEach(function (item, i) {
             var jsonItem = JSON.parse(item);
             results.push({
@@ -20,8 +20,8 @@ function execute(params) {
                 audioStreamUrl: null,
                 quality: jsonItem.quality,
                 "default": false
-            })
-        })
+            });
+        });
     }
 
     results.sort(function (first, second) {
@@ -35,8 +35,8 @@ function execute(params) {
         return firstQuality - secondQuality;
     });
 
-    var length = results.length;
-    if (length > 0) results[length - 1].default = true;
+    var l = results.length;
+    if (l > 0) results[l - 1].default = true;
  
     return {results: results};
 }
